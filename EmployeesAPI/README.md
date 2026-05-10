@@ -1,3 +1,7 @@
+# Python-FastAPI Project
+To demonstrate the use of FASTAPI for RESTAPI, JWT, 
+
+
 # Installation and Setup
 
 ## Clone Repository
@@ -28,7 +32,7 @@ python -m venv venv
 # Install Dependencies
 
 ```bash
-pip install fastapi uvicorn sqlalchemy psycopg2-binary python-jose
+pip install fastapi uvicorn sqlalchemy psycopg2-binary python-jose python-jwt
 ```
 
 ---
