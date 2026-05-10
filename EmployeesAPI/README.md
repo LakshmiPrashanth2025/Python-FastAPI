@@ -1,6 +1,17 @@
-# Python-FastAPI Project
-To demonstrate the use of FASTAPI for RESTAPI, JWT, 
+# Python-FastAPI  -  REST API Project
 
+Explored FastAPI with hands-on implementation of REST APIs, JWT authentication, Python database connectivity, and ORM mappings.
+
+## Implemented Features
+
+- REST API development using FastAPI decorators  
+- JWT token generation and validation  
+- Protected APIs with Bearer Authentication  
+- Database integration using SQLAlchemy ORM  
+- CRUD operations with ORM mappings  
+- Request validation using Pydantic schemas  
+
+FastAPI provides a clean, modern, and high-performance approach for building secure backend APIs with minimal boilerplate code.
 
 # Installation and Setup
 
