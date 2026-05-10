@@ -1,10 +1,10 @@
-# 🚀 Task Manager API (FastAPI + PostgreSQL + JWT)
+# 🗂️ Task Manager API (FastAPI + PostgreSQL + JWT)
 
 A simple backend project built using **FastAPI** that allows users to manage tasks with full CRUD operations and secure APIs using JWT authentication.
 
 ---
 
-## 📌 Features
+## 🚀 Features
 
 - ✅ FastAPI backend
 - ✅ PostgreSQL database connection
@@ -18,14 +18,14 @@ A simple backend project built using **FastAPI** that allows users to manage tas
 
 ## 📁 Project Structure
 
-
+```text
 task_manager/
 ├── main.py
 ├── database.py
 ├── models.py
 ├── schemas.py
 ├── auth.py
-
+```
 
 ---
 
@@ -33,28 +33,28 @@ task_manager/
 
 ### 1️⃣ Clone Repository
 
-
-git clone https://github.com/payal-morepatil/task-manager-api.git
+```bash
+git clone https://github.com/LakshmiPrashanth2025/Python-FastAPI.git
 
 cd task-manager-api
-
+```
 
 ---
 
 ### 2️⃣ Create Virtual Environment
 
-
+```bash
 python -m venv venv
 .\venv\Scripts\activate
-
+```
 
 ---
 
 ### 3️⃣ Install Dependencies
 
-
+```bash
 pip install fastapi uvicorn sqlalchemy psycopg2-binary python-jose
-
+```
 
 ---
 
@@ -64,43 +64,100 @@ pip install fastapi uvicorn sqlalchemy psycopg2-binary python-jose
 
 ```sql
 CREATE DATABASE taskdb;
-▶️ Run Project
+```
+
+---
+
+## ▶️ Run Project
+
+```bash
 uvicorn main:app --reload
-🌐 API Documentation
+```
 
-Swagger UI:
+Application runs at:
 
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## 🌐 API Documentation
+
+### Swagger UI
+
+```text
 http://127.0.0.1:8000/docs
-🔐 Authentication (JWT)
-Login API
+```
+
+### ReDoc
+
+```text
+http://127.0.0.1:8000/redoc
+```
+
+---
+
+## 🔐 Authentication (JWT)
+
+### Login API
+
+```http
 POST /login
+```
 
-Input:
+### Input Credentials
 
+```text
 username = admin
 password = admin
-Use Token
-Copy token from login response
-Click Authorize in Swagger
-Paste:
+```
+
+---
+
+## 🔑 Use Token
+
+1. Copy token from login response
+2. Click **Authorize** in Swagger UI
+3. Paste:
+
+```text
 Bearer your_token_here
-📌 API Endpoints
-Method	Endpoint	Description
-POST	/login	Generate token
-POST	/tasks	Create task
-GET	/tasks	Get all tasks
-GET	/tasks/{id}	Get task by ID
-PUT	/tasks/{id}	Update task
-DELETE	/tasks/{id}	Delete task
-🧪 Example Request
+```
+
+---
+
+## 📌 API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/login` | Generate JWT Token |
+| POST | `/tasks` | Create Task |
+| GET | `/tasks` | Get All Tasks |
+| GET | `/tasks/{id}` | Get Task By ID |
+| PUT | `/tasks/{id}` | Update Task |
+| DELETE | `/tasks/{id}` | Delete Task |
+
+---
+
+## 🧪 Example Request
+
+```json
 {
   "title": "Study",
   "description": "Learn FastAPI",
   "status": "pending"
 }
-🎯 Learning Outcomes
-Understanding REST APIs
-Working with FastAPI
-Database integration with PostgreSQL
-JWT Authentication
-Error handling
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+- Understanding REST APIs
+- Working with FastAPI
+- Database integration with PostgreSQL
+- JWT Authentication
+- Error handling
+- Swagger/OpenAPI documentation
+- CRUD API implementation
