@@ -4,7 +4,7 @@ A simple backend project built using **FastAPI** that allows users to manage tas
 
 ---
 
-## 🚀 Features
+##  Features
 
 - ✅ FastAPI backend
 - ✅ PostgreSQL database connection
